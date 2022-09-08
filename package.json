@@ -1,5 +1,10 @@
 {
   "name": "claudia_doces",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ClaudioFerreir/claudia_doces.git",
+  "author": "ClaudioFerreir <claudioferreirajr@hotmail.com>",
+  "license": "MIT"
 }
