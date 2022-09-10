@@ -34,6 +34,11 @@ fizzy-ui-utils@^2.0.0, fizzy-ui-utils@^2.0.4:
   dependencies:
     desandro-matches-selector "^2.0.0"
 
+font-awesome@4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.6.3.tgz#86933651540ee00874c664017f50f2172f6531a2"
+  integrity sha512-I5rWuHv7MI5uYDGFT1SJohxdkTfks41QQ9fvMEzvBnWppsehXnoj8LNuW4MGtawSrHvApYVhCZSC7rk5wDycyw==
+
 get-size@^2.0.0, get-size@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
