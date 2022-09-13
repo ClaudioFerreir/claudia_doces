@@ -14,14 +14,15 @@
 					<td><%= admin.id %></td>
 					<td><%= admin.email %></td>
 					<td style="width: 100px">
-						<a href="#" class="btn btn-primary btn-circle btn-sm">
-              <i class="fas fa-edit"></i>
-            </a>
+						<%= link_to edit_admins_backoffice_admin_path(admin), class: "btn btn-primary btn-circle btn-sm" do%>
+						  <i class="fas fa-edit"></i>
+			    	<% end %>
+            
 						<a href="#" class="btn btn-danger btn-circle btn-sm">
               <i class="fas fa-trash"></i>
             </a>
 						
-						</td>
+					</td>
 				</tr>
 			<% end %>
 		</tbody>
