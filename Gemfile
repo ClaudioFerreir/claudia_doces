@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Translate your models attributes, views, controllers, and database columns with one I18n (internationalization) API.
 gem 'rails-i18n', '~> 5.1'
 
 # Create a new Admin and Profile logins
@@ -46,6 +47,10 @@ gem 'tty-spinner'
 
 # Create a faker for the seeds
 gem 'faker'
+
+# Create a pagination
+gem 'kaminari'
+gem 'kaminari-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
