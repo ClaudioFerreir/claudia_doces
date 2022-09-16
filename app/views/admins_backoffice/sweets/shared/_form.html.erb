@@ -1,0 +1,37 @@
+<div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="page-header"><%= "#{action_message} Doce" %></h1>
+    </div>
+
+
+	<% if @sweet.errors.any? %>
+        <div class="alert alert-danger alert-dismissable pb-0">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            
+            <ul>
+              <% @sweet.errors.full_messages.each do |message| %>
+                <li> <%= message %> </li>
+              <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+	<div class="card">
+		<div class="card-body">
+			<%= form_with(model: [ :admins_backoffice, @sweet ], local:true) do |form| %>
+				<div class="form-group">
+					<%= form.label :name %>
+					<%= form.text_field :name, class: "form-control mb-3", placeholder: "Nome do doce" %>
+				</div>
+				<div class="form-group">
+					<%= form.label :description %>
+					<%= form.text_field :description, class: "form-control mb-3", placeholder: "Descrição do doce" %>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary" type="submit">Salvar</button>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

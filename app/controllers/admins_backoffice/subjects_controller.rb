@@ -31,7 +31,7 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
 
 	def destroy
 		if @subject.destroy
-			redirect_to admins_backoffice_subjects_path, notice: 'Categoria excluida om sucesso'
+			redirect_to admins_backoffice_subjects_path, notice: 'Categoria excluida com sucesso'
 		else
 			render :index
 		end

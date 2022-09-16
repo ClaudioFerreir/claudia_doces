@@ -13,6 +13,7 @@ namespace :dev do
       show_spinner("Cadastrando adminstradores extras...") { %x(rails dev:add_extra_admins) }
       show_spinner("Cadastrando o usuário padrão...") { %x(rails dev:add_default_user) }
       show_spinner("Cadastrando categorias padrão...") { %x(rails dev:add_default_subjects) }
+      show_spinner("Cadastrando doces...") { %x(rails dev:add_sweets) }
       
     else
       puts "Você não está no ambiente de desenvolvimento!"
