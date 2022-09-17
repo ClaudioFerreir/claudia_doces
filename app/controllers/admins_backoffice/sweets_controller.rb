@@ -2,7 +2,7 @@ class AdminsBackoffice::SweetsController < AdminsBackofficeController
 	before_action :set_sweet, only: [:edit, :update, :destroy]
 
   def index
-  	@sweets = Sweet.all.order(:description).page(params[:page])
+  	@sweets = Sweet.all.order(:name).page(params[:page])
   end
 
 	def new
@@ -40,7 +40,7 @@ class AdminsBackoffice::SweetsController < AdminsBackofficeController
 	private
 
 	def params_sweet
-		params.require(:sweet).permit(:description)
+		params.require(:sweet).permit(:name, :description, :subject_id, :price)
 	end
 
 	def set_sweet
