@@ -40,7 +40,7 @@ class AdminsBackoffice::SweetsController < AdminsBackofficeController
 	private
 
 	def params_sweet
-		params.require(:sweet).permit(:name, :description, :subject_id, :price)
+		params.require(:sweet).permit(:name, :description, :subject_id, :price, :image)
 	end
 
 	def set_sweet
