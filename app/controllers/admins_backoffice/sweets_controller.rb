@@ -1,5 +1,6 @@
 class AdminsBackoffice::SweetsController < AdminsBackofficeController
 	before_action :set_sweet, only: [:edit, :update, :destroy]
+	before_action :get_subjects, only: [:new, :edit]
 
   def index
   	@sweets = Sweet.all.order(:name).page(params[:page])
@@ -46,6 +47,11 @@ class AdminsBackoffice::SweetsController < AdminsBackofficeController
 	def set_sweet
 		@sweet = Sweet.find(params[:id])
 	end
+
+	def get_subjects
+		@subjects = Subject.all
+	end
+
 end
 
 
