@@ -3,5 +3,5 @@ class Sweet < ApplicationRecord
   has_one_attached :image
   
   # kaminari pagination
-  paginates_per 5
+  paginates_per 10
 end

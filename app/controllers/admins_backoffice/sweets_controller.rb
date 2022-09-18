@@ -3,7 +3,9 @@ class AdminsBackoffice::SweetsController < AdminsBackofficeController
 	before_action :get_subjects, only: [:new, :edit]
 
   def index
-  	@sweets = Sweet.all.order(:name).page(params[:page])
+  	@sweets = Sweet.includes(:Subject)
+		               .order(:name)
+									 .page(params[:page])
   end
 
 	def new
