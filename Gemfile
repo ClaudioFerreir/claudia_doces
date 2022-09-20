@@ -63,6 +63,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Security for sharing the secrect keys on Github
   gem 'dotenv-rails'
+  # View of database
+  #gem 'rails_db', '2.2.1'
 end
 
 group :development do

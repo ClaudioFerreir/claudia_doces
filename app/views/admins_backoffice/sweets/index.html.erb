@@ -10,7 +10,7 @@
 				<th>Nome</th>
 				<th>Descrição</th>
 				<th>Categoria</th>
-				<th>Preço</th>
+				<th>Preço(R$)</th>
 				<th>
 					<%= link_to new_admins_backoffice_sweet_path, class: "btn btn-success btn-circle btn-sm" do%>
 					  <i class="fas fa-plus"></i>
@@ -25,7 +25,7 @@
 					<td><%= sweet.name %></td>
 					<td><%= sweet.description.truncate(50) %></td>
 					<td><%= sweet.subject.description.truncate(30) %></td>
-					<td>R$ <%= sweet.price %></td>
+					<td><%= number_with_precision(sweet.price, precision: 2) %></td>
 					<td style="width: 100px">
 						<%= link_to edit_admins_backoffice_sweet_path(sweet), class: "btn btn-primary btn-circle btn-sm" do%>
 						  <i class="fas fa-edit"></i>
