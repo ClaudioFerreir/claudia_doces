@@ -56,23 +56,40 @@
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">Sobre</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="book.html">Faça seu pedido</a>
-                </li>
               </ul>
               <div class="user_option">
-                <%= link_to new_user_session_path, class: "user_link" do %> 
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>Entrar</span>
+                <% unless user_signed_in? %>
+                  <%= link_to new_user_session_path, class: "user_link" do %> 
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Entrar</span>
+                  <% end %>
+                  <%= link_to new_user_registration_path, class: "user_link" do %> 
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Cadastrar</span>
+                  <% end %>
+                <% else %>
+                  <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <%= current_user.email %>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <%= link_to "Sair", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                                                  
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+               
                 <% end %>
-                <%= link_to new_user_session_path, class: "user_link" do %> 
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>Cadastrar</span>
-                <% end %>
-                
-                <a href="" class="order_online">
-                  Faça seu pedido
-                </a>
               </div>
             </div>
           </nav>
