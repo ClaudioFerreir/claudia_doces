@@ -7,7 +7,8 @@
 //= require popper.js/dist/popper
 //= require bootstrap/dist/js/bootstrap
 //= require owl.carousel/dist/owl.carousel
-//= require isotope-layout/dist/isotope.pkgd.js
-//= require jquery-nice-select/js/jquery.nice-select.js
+//= require isotope-layout/dist/isotope.pkgd
+//= require jquery-nice-select/js/jquery.nice-select
+//= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
 //= require feanecustom
 
