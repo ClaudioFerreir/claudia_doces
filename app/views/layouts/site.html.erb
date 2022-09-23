@@ -64,7 +64,7 @@
                     <span>Entrar</span>
                   <% end %>
                   <%= link_to new_user_registration_path, class: "user_link" do %> 
-                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
                     <span>Cadastrar</span>
                   <% end %>
                 <% else %>
@@ -76,12 +76,9 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <%= current_user.email %>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                               <%= link_to "Sair", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            </ul>
                                                   
                           </li>
                         </ul>
