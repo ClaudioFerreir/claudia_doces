@@ -366,7 +366,7 @@
                 <div class="box">
                   <div>
                     <div class="img-box">
-                      <%= image_tag 'merengueLimaoT.png' %>
+                      <%= cl_image_tag(sweet.image.key, width: 393, height: 215, crop: :pad) %>
                     </div>
                     <div class="detail-box">
                       <h5>
@@ -686,19 +686,6 @@
             <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
           </p>
         </div>
-      </div>
-
-      <div>
-        <ul class="">
-          <li class="" data-filter="">
-            <% @sweets.each do |sweet| %>
-              <p>.<%= sweet.subject.description.gsub(/\s+/, "") %></p>
-              <p><%= sweet.subject.description %></p>
-              <br>
-              <p>---------------------------------------------</p>
-            <% end %>
-          </li>
-        </ul>
       </div>
 
 
