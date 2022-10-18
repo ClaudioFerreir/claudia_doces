@@ -4,4 +4,10 @@ class Sweet < ApplicationRecord
   
   # kaminari pagination
   paginates_per 10
+
+  def self.search(term, page)
+    Sweet.where("lower(name) LIKE ?", "%#{term.downcase}%")
+         .order(:name)
+         .page(page)
+  end
 end
