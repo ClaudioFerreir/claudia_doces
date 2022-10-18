@@ -62,12 +62,6 @@
               </ul>
             </div>
 
-            <div>
-              <form class="form-inline my-2 my-lg-0 mx-2">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-              </form>
-            </div>
 
             <div id="navbar" class="navbar-toggle">
               <ul class="nav navbar-nav navbar-right"></ul>
@@ -366,16 +360,16 @@
         </ul>
 
         <div class="filters-content">
-          <div class="row grid">
+          <div class="row grid align-itens-center">
 
             <% @sweets.each do |sweet| %>
               <div class="col-sm-6 col-lg-4 all <%= sweet.subject.description.gsub(/\s+/, "") %>">
                 <div class="box">
                   <div>
-                    <div class="img-box">
+                    <div class="img-box" >
                       <%= cl_image_tag(sweet.image.key, width: 393, height: 215, crop: :fill) %>
                     </div>
-                    <div class="detail-box">
+                    <div class="detail-box sweet-description">
                       <h5>
                         <%= sweet.name %>
                       </h5>

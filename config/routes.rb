@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
   namespace :site do
     get 'welcome/index'
-    get 'search', to: 'search#sweets'
+    
   end
   namespace :users_backoffice do
     get 'welcome/index'
   end
   namespace :admins_backoffice do
     get 'welcome/index' # Dashboard
+    get 'search', to: 'search#sweets' # Search
     resources :admins # Admins
     resources :subjects # Categories
     resources :sweets # Doces
