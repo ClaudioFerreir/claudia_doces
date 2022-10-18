@@ -1,7 +1,7 @@
 class AdminsBackoffice::SearchController < AdminsBackofficeController
   def sweets
-    @sweets = Sweet.includes(:subject)
-		               .order(:name)
+    @sweets = Sweet.where("lower(name) LIKE ?", "%#{params[:term].downcase}%")
+                   .order(:name)
 									 .page(params[:page])
   end
 end
