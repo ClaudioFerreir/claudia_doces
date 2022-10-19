@@ -1,6 +1,6 @@
 class Site::WelcomeController < SiteController
   def index
-    @sweets = Sweet.all
+    @sweets = Sweet.last_sweets
     @subjects = Subject.all
   end
 end
