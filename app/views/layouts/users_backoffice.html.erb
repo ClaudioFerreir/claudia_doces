@@ -47,6 +47,11 @@
               <div class="menu_section">
                 <ul class="nav side-menu">
                   <li>
+                    <%= link_to users_backoffice_welcome_index_path do%>
+                      <i class="fa fa-home"></i> Início
+                    <% end %>
+                  </li>
+                  <li>
                     <%= link_to users_backoffice_profile_path do%>
                       <i class="fa fa-user"></i> Dados do Perfil
                     <% end %>
@@ -112,10 +117,7 @@
 
         <!-- footer content -->
         <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
+        
         </footer>
         <!-- /footer content -->
       </div>
