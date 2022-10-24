@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  # Associations
+  has_one :user_profile, dependent: :destroy
+  accepts_nested_attributes_for :user_profile, reject_if: :all_blank
 
   # Validations
   validates :first_name, presence: true, length: { minimum: 2 }, on: :update
