@@ -39,6 +39,23 @@
 																										<%= form.label :email %>
 																										<%= form.text_field :email, class: "form-control", readonly: true %>
 																								</div>
+																							
+																								<%= form.fields_for :user_profile do |profile_form|%>
+																									<div class="form-floating col-md-12 mb-3">
+																											<%= profile_form.label :endereço %>
+																											<%= profile_form.text_field :address, class: "form-control" %>
+																									</div>
+																									
+																									<div class="form-floating col-md-6 mb-3">
+																											<%= profile_form.label :genero %>
+																											<%= profile_form.text_field :gender, class: "form-control" %>
+																									</div>
+																								
+																									<div class="form-floating col-md-6 mb-3">
+																											<%= profile_form.label :data_de_nascimento %>
+																											<%= profile_form.text_field :birthdate, class: "form-control" %>
+																									</div>
+																								<% end %>
 																								
 																								<div class="col-md-6">
 																										<div class="form-floating mb-3 mb-md-0">
@@ -65,8 +82,7 @@
                 </main>
             </div>
 
-
-
+					
             <div id="layoutAuthentication_footer">
                 <footer>
                   
