@@ -35,7 +35,6 @@
       <header class="header_section">
         <div class="container">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            
             <div>
               <a class="navbar-brand" href="index.html">
                 <span>
@@ -49,7 +48,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  mx-auto">
+              <ul class="navbar-nav  mx-auto menu-item">
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -61,51 +60,7 @@
                 </li>
               </ul>
             </div>
-
-
-            <div id="navbar" class="navbar-toggle">
-              <ul class="nav navbar-nav navbar-right"></ul>
-                <% unless user_signed_in? %>
-                  <%= link_to new_user_session_path, class: "user_link" do %> 
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <span>Entrar</span>
-                  <% end %>
-                  <%= link_to new_user_registration_path, class: "user_link" do %> 
-                    <i class="fa fa-user-plus" aria-hidden="true"></i>
-                    <span>Cadastrar</span>
-                  <% end %>
-                <% else %>
-                  <nav class="navbar navbar-expand-lg ">
-                    <div class="container-fluid">
-                      <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav">
-                          <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <%= current_user.email %>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li>
-                                <%= link_to users_backoffice_welcome_index_path, class: "dropdown-item" do%>
-                                  <i class="fa fa-user" aria-hidden="true"></i>
-                                  <span>Perfil</span>
-                                <% end %>
-                              </li>
-                              <li class="dropdown-divider"></li>
-                              <li>
-                                <%= link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do%>
-                                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                  <span>Sair</span>
-                                <% end %>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                <% end %>
-            </div>
-            
+          <!-- seccao user no site na navbar -->
           </nav>
         </div>
       </header>
@@ -120,16 +75,11 @@
                   <div class="col-md-7 col-lg-6 ">
                     <div class="detail-box">
                       <h1>
-                        Confeitaria D. Claudia
+                        Confeitaria <br> D. Claudia
                       </h1>
                       <p>
                         Atendemos as pessoas com muito carinho e dedicação, para que possam desfrutar de um momento único e especial.
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1">
-                          Faça seu pedido
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -141,16 +91,11 @@
                   <div class="col-md-7 col-lg-6 ">
                     <div class="detail-box">
                       <h1>
-                        Confeitaria D. Claudia
+                        Confeitaria <br> D. Claudia
                       </h1>
                       <p>
                         É bem mais gostoso comer um doce feito com amor. É sobre poder oferecer as pessoas aquilo que você tem de melhor. 
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1">
-                          Faça seu pedido
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -162,16 +107,11 @@
                   <div class="col-md-7 col-lg-6 ">
                     <div class="detail-box">
                       <h1>
-                        Confeitaria D. Claudia
+                        Confeitaria <br> D. Claudia
                       </h1>
                       <p>
                         Cozinhar é uma arte, mas a confeitaria precisa de uma sensibilidade maior. A confeitaria não é só para ganhar dinheiro, é uma paixão.
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1">
-                          Faça seu pedido 
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>

@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     resources :sweets # Doces
   end
 
-  devise_for :users
+  devise_for :users, skip: [:registrations]
   devise_for :admins, skip: [:registrations]
   
   get 'inicio' => 'site/welcome#index'

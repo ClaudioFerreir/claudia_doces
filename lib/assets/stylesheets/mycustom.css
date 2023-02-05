@@ -1,0 +1,35 @@
+/*
+primary colors
+- dark pink  - #EF6079
+- dark brown - #5B3427
+- light pink - #FFB1BB
+*/
+
+* {
+  font-family: ;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.nav-link {
+  color: #EF6079 !important;
+}
+
+.nav-link:hover {
+  color: #5B3427 !important;
+}
+
+.carousel-inner .detail-box {
+  color: #FFB1BB;
+}
+
+.mr-auto, .mx-auto {
+  margin-right: 0 !important;
+}
+
+.col-md-6 .box {
+  background-color: #EF6079;
+  color: #5B3427;
+}
