@@ -13,6 +13,10 @@ body {
   background-color: #FFF;
 }
 
+h2, h5 {
+  color: #5B3427;
+}
+
 .nav-link {
   color: #EF6079 !important;
 }
@@ -44,16 +48,20 @@ body {
   color: #5B3427;
 }
 
-#btn-custom {
-  font-weight: 600;
-  color: #5B3427;
-  background-color: transparent;
-  border: 1px solid #5B3427;
-  border-color: #5B3427;
+.btn-custom {
+  font-weight: 600 !important;
+  color: #5B3427 !important;
+  background-color: transparent !important;
+  border: 1px solid #5B3427 !important;
+  border-color: #5B3427 !important;
 }
 
-#btn-custom:hover {
-  color: #EF6079;
-  background-color: #5B3427;
-  transition: 0.6s;
+.btn-custom:hover {
+  color: #EF6079 !important;
+  background-color: #5B3427 !important;
+  transition: 0.6s !important;
+}
+
+.sweet-description p {
+  color: #5B3427;
 }
