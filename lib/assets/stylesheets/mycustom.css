@@ -5,8 +5,16 @@ primary colors
 - light pink - #FFB1BB
 */
 
-* {
-  font-family: ;
+.primary-light-color {
+  color: #EF6079;
+}
+
+.primary-dark-color {
+  color: #5B3427;
+}
+
+.secundary-light-color {
+  color: #FFB1BB;
 }
 
 body {
@@ -54,6 +62,8 @@ h2, h5 {
   background-color: transparent !important;
   border: 1px solid #5B3427 !important;
   border-color: #5B3427 !important;
+  border-radius: 45px !important;
+  padding: 10px 30px !important;
 }
 
 .btn-custom:hover {
@@ -64,4 +74,12 @@ h2, h5 {
 
 .sweet-description p {
   color: #5B3427;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-body {
+  background-color: #EF6079;
 }
