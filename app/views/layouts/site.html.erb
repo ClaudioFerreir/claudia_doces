@@ -201,9 +201,9 @@
           <div class="row grid align-itens-center">
             <% @sweets.each do |sweet| %>
               <div class="col-12 col-sm-6 col-lg-4 all <%= sweet.subject.description.gsub(/\s+/, "") %>">
-                <div class="card">
+                <div class="box">
                   <div class="card-img-top" >
-                    <%= cl_image_tag(sweet.image.key, width: 286, height: 215, crop: :fill) %>
+                    <%= cl_image_tag(sweet.image.key, width: 479, height: 215, crop: :fill) %>
                   </div>
                   <div class="card-body">
                     <h5 class= "card-title">
@@ -212,14 +212,14 @@
                     <p class="card-text">
                       <%= sweet.description %>
                     </p>
-                    <div class="options">
-                      <h6>
-                        <%= format("R$ %.2f", sweet.price) %>
-                      </h6>
+                    <div class="price">
+                      <h6><%= format("R$ %.2f", sweet.price)%></h6>
                     </div>
-                    <a href="#" class="btn-custom">
-                      Faça o seu Pedido<i class="bi bi-cart"></i>
-                    </a>
+                    <div class="order">    
+                      <a href="#" class="btn-custom">
+                        Faça o seu Pedido<i class="bi bi-cart"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

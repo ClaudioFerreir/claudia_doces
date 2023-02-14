@@ -72,12 +72,6 @@ h2, h5 {
   transition: 0.6s !important;
 }
 
-.card {
-  width: 18rem;
-  margin-bottom: 20px;
-  color: #5B3427;
-}
-
 .card-body {
   background-color: #EF6079;
 }
@@ -86,6 +80,16 @@ h2, h5 {
   text-align: center;
 }
 
-.card-text {
+.filters-content .box {
   text-align: center;
+  color: #5B3427;
 }
+
+.card-text {
+  font-size: 0.8rem;
+} 
+
+.price {
+  margin-bottom: 1.5rem;
+}
+
