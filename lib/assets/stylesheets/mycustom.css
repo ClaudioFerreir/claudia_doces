@@ -72,14 +72,20 @@ h2, h5 {
   transition: 0.6s !important;
 }
 
-.sweet-description p {
-  color: #5B3427;
-}
-
 .card {
   width: 18rem;
+  margin-bottom: 20px;
+  color: #5B3427;
 }
 
 .card-body {
   background-color: #EF6079;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
 }
